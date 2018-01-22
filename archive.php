@@ -23,7 +23,7 @@ endif;
 
 ?>
 
-	<?php education_park_breadcrumb(); ?>
+
 	<!-- End the breadcrumb -->
 
 	<?php if ($boxedornot == 'fullwidth') {?>

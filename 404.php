@@ -19,7 +19,7 @@ elseif ($sidebar_class == 'no-sidebar'):
 endif;
 
 ?>
-<?php education_park_breadcrumb(); ?>
+
     <!-- End the Breadcrumb -->
 
 <?php if ($boxedornot == 'fullwidth') { ?>

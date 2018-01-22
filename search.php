@@ -14,7 +14,7 @@ $sidebar_layout = get_theme_mod('layout_picker');
 $sidebar_class = education_park_check_sidebar();
 ?>
 
-	<?php education_park_breadcrumb(); ?>
+	
 	<!-- End the breadcrumb -->
 
 	<?php if ($boxedornot == 'fullwidth') {?>

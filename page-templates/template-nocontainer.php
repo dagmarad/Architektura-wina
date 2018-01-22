@@ -10,7 +10,7 @@ get_header();
 // Boxed or Fullwidth
 $boxedornot = education_park_boxedornot();
 
-education_park_breadcrumb(); ?>
+ ?>
 		<!-- Start the container -->
         <div class="container full-width-container">
 			<div class="content-area full-width-posts">
