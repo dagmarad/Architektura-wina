@@ -164,12 +164,12 @@ if ( ! function_exists( 'education_park_fonts_url' ) ) :
         $fonts_url = '';
         $fonts     = array();
 
-        if ( 'off' !== _x( 'on', 'Montserrat font: on or off', 'education-park' ) ) {
-            $fonts[] = 'Montserrat:300,400';
+        if ( 'off' !== _x( 'on', 'Roboto font: on or off', 'education-park' ) ) {
+            $fonts[] = 'Roboto:300,400';
         }
 
-        if ( 'off' !== _x( 'on', 'Varela+Round font: on or off', 'education-park' ) ) {
-            $fonts[] = 'Varela Round';
+        if ( 'off' !== _x( 'on', 'Roboto font: on or off', 'education-park' ) ) {
+            $fonts[] = 'Roboto';
         }
 
         if ( $fonts ) {

@@ -15837,7 +15837,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
     padding: 3rem 0 0;
@@ -15903,7 +15903,6 @@ h5,
 h6,
 .widget-title,
 .widgettitle {
-  font-family: 'Varela Round', Open Sans, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -17385,7 +17384,7 @@ h2.entry-title a {
 Template Layouts
 +++++++++++++++++++++++++++++++*/
 body {
-  background: #f4f8fb;
+  background: #fff;
   background-size: cover;
 }
 
@@ -17483,7 +17482,7 @@ body {
 
 #primary {
   position: relative;
-  padding: 3em 2.7em 3em 2.7em;
+  padding: 0em 2.7em 3em 2.7em;
 }
 
 .full-width-container #primary {
@@ -17680,7 +17679,6 @@ Site Header
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
 }
 
 .menuexceeds .navbar-collapse {
@@ -17838,7 +17836,6 @@ div#navbar-collapse-main {
     text-transform: capitalize;
     color: #333;
     border-radius: 3px;
-    font-family: Varela Round;
 }
 
 .navbar .navbar-nav > li:last-child > a {
@@ -17899,7 +17896,6 @@ div#navbar-collapse-main {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background: #fafafa;
-  font-family: Varela Round;
 }
 
 .navbar-nav .dropdown-menu li a:hover,
@@ -18156,7 +18152,6 @@ Navbar Brand
 .entry-meta .date, .entry-meta .author {
     display: inline-block;
     color: #666;
-    font-family: Varela Round;
     font-size: 13px;
 }
 .blog-content .entry-meta {
@@ -19496,7 +19491,6 @@ Override Jetpack Contact form
     text-transform: uppercase;
     color: #333;
     border-radius: 3px;
-    font-family: Varela Round;
 }
 .fallback_menu_default li a:hover{
     color: #5bbc2e;
@@ -19675,31 +19669,49 @@ a.custom-logo-link img {
     padding-right: 0 !important;
     padding-top: 0 !important;
 }
+.home-container--wrapper{
+  display:flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  
+}
 .home-container {
-	height: 560px;
-	width:500px;
-	border:1px solid black;
+	height: 450px;
+	width:500px; 
   margin-bottom: 10px;
-  display:inline-block;
   background-size: cover;
   max-width:100%;
   max-height:80vw;
   text-align:center;
   font-size:80px;
+  border:1px solid #222;
+    margin-left: 10px;
 }
 .home-container p{
   padding-top:120px;
 }
 .container--left{
-  
   background: #222 url("../img/korki.jpg") no-repeat -1000px -1000px;
+
 }
 .container--left:hover{
   background-position: 0 0;
 }
 .container--right{
-  background: url("../img/wino.jpg") no-repeat;
+  background: #ffff url("../img/wino.jpg") no-repeat -1000px -1000px;
+}
+.container--right:hover{
+  background-position: 0 0;
 }
 .container--bottom{
-  background: url("../img/winnica.jpg") no-repeat;
+  background: #222 url("../img/winnica.jpg") no-repeat -1000px -1000px;
+  height: 220px;
+	width:1010px;
+  
+}
+.container--bottom p{
+  padding-top:40px;
+}
+.container--bottom:hover{
+  background-position: 0 0;
 }
