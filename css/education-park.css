@@ -19673,11 +19673,11 @@ a.custom-logo-link img {
   display:flex;
   justify-content: center;
   flex-wrap:wrap;
-  
+
 }
 .home-container {
-	height: 450px;
-	width:500px; 
+	height: 420px;
+	width:500px;
   margin-bottom: 10px;
   background-size: cover;
   max-width:100%;
@@ -19692,13 +19692,18 @@ a.custom-logo-link img {
 }
 .container--left{
   background: #222 url("../img/korki.jpg") no-repeat -1000px -1000px;
-
+}
+.container--left p, .container--bottom p{
+  color:#fff;
 }
 .container--left:hover{
   background-position: 0 0;
 }
 .container--right{
   background: #ffff url("../img/wino.jpg") no-repeat -1000px -1000px;
+}
+.container--right p{
+  color:#000;
 }
 .container--right:hover{
   background-position: 0 0;
@@ -19707,7 +19712,7 @@ a.custom-logo-link img {
   background: #222 url("../img/winnica.jpg") no-repeat -1000px -1000px;
   height: 220px;
 	width:1010px;
-  
+
 }
 .container--bottom p{
   padding-top:40px;
