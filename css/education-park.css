@@ -2037,7 +2037,7 @@
   content: "\f1f8";
 }
 
-.fa-copyright:before {
+.fa-copyright-content:before {
   content: "\f1f9";
 }
 
@@ -19719,4 +19719,9 @@ a.custom-logo-link img {
 }
 .container--bottom:hover{
   background-position: 0 0;
+}
+.address-content{
+  float:right;
+  display:inline-block;
+  margin-right:20px;
 }
