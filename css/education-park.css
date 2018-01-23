@@ -19723,5 +19723,6 @@ a.custom-logo-link img {
 .address-content{
   float:right;
   display:inline-block;
-  margin-right:20px;
+  margin-right:25px;
+  color:#fff;
 }
