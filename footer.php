@@ -31,15 +31,15 @@ $boxedornot = education_park_boxedornot();
 
 				  	<div class="copyright-content">
 						<div class="address-content">	
-							<p><strong>--------- Adres</strong></p>
+							<p><strong>Adres</strong></p>
 							<p>ul. Szpitalna 17</p>
 						</div>
 						<div class="address-content">						
-							<p><strong>--------- Telefon</strong></p>
+							<p><strong>Telefon</strong></p>
 						<p>665-749-144</p>
 						</div>	
 						<div class="address-content">	
-						<p><strong>--------- E-mail</strong></p>
+						<p><strong>E-mail</strong></p>
 						<p>architektura-wina@gmail.com</p>
 						</div>
 				  	</div>

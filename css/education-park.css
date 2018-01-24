@@ -19703,7 +19703,7 @@ a.custom-logo-link img {
   background: #ffff url("../img/wino.jpg") no-repeat -1000px -1000px;
 }
 .container--right p{
-  color:#000;
+  color:#222;
 }
 .container--right:hover{
   background-position: 0 0;
@@ -19720,9 +19720,24 @@ a.custom-logo-link img {
 .container--bottom:hover{
   background-position: 0 0;
 }
+div.copyright.clearfix{
+  background-color: #222 !important;
+  width:100%;
+}
 .address-content{
   float:right;
   display:inline-block;
   margin-right:25px;
   color:#fff;
+}
+.wine-container{
+  float: right;
+    background: url("../img/winoButelki.jpg") no-repeat;
+    background-size: cover;
+    height: 400px;
+    width:400px;
+}
+.wine-content{
+  float:left;
+  max-width:500px;
 }
