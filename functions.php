@@ -8,6 +8,9 @@
 /**
  * Set the content width based on the theme's design and stylesheet.
  */
+ 
+ remove_filter( 'the_content', 'wpautop' );
+ remove_filter( 'the_excerpt', 'wpautop' );
 if ( ! isset( $content_width ) ) {
     $content_width = 640; /* pixels */
 }

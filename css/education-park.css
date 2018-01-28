@@ -19669,75 +19669,81 @@ a.custom-logo-link img {
     padding-right: 0 !important;
     padding-top: 0 !important;
 }
-.home-container--wrapper{
+.blocks {
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap:wrap;
+  position:relative;
 
 }
-body{
-  background-color: #fff !important;
-}
-.home-container {
-	height: 415px;
+
+.blocks__block {
+	height: 385px;
 	width:49%;
   margin-bottom: 15px;
   background-size: cover;
-  max-width:100%;
-  max-height:80vw;
-  text-align:left;
+  max-width: 100%;
+  max-height: 80vw;
+  text-align: left;
   border:1px solid #222;
 }
-.home-container h2{
-  padding-top:120px;
-  padding-left:60px;
-
-  font-size:60px;
+.blocks__block:hover{
+  background-position: 0 0;
 }
-.home-container p{
-  padding-left:60px;
-  padding-right:60px;
+.blocks__block h2{
+  padding-top: 120px;
+  padding-left: 60px;
+
+  font-size: 60px;
+}
+.blocks__block p{
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-.container--left{
+.blocks__block--left{
   background: #222 url("../img/korki.jpg") no-repeat -1000px -1000px;
-  margin-right: 10px;
 }
-.container--left h2, .container--bottom h2, .container--bottom p, .container--left p {
+.blocks__block--left h2, .blocks__block--bottom h2, .blocks__block--bottom p, .blocks__block--left p {
   color:#fff;
 }
-.container--left:hover{
-  background-position: 0 0;
-}
-.home-container-opacity--left{
-  height: 415px;
+.blocks__block__overlay{
+  height: 383px;
 	width:100%;
+  position: relative;
 }
-.home-container-opacity--left:hover{
+.blocks__block__overlay--white:hover{
+  background-color: rgba(255,255,255,0.4);
+}
+
+.blocks__block__overlay--black:hover{
   background-color: rgba(0,0,0,0.8);
-  padding-bottom:0;
 }
-.container--right{
+
+.blocks__block__overlay a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.blocks__block--right{
   background: #ffff url("../img/wino.jpg") no-repeat -1000px -1000px;
-  margin-left: 10px;
 }
-.container--right h2, .container--right p {
+.blocks__block--right h2, .blocks__block--right p {
   color:#222;
 }
-.container--right:hover{
-  background-position: 0 0;
-}
-.container--bottom{
+
+.blocks__block--bottom{
   background: #222 url("../img/winnica.jpg") no-repeat -1000px -1000px;
-  height: 220px;
+  height: 170px;
 	width:100%;
 }
-.container--bottom h2{
+.blocks__block--bottom h2{
   padding-top:40px;
 }
-.container--bottom:hover{
-  background-position: 0 0;
-}
+
 div.copyright.clearfix{
   background-color: #222 !important;
   width:100%;
