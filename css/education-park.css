@@ -17474,9 +17474,6 @@ body {
     color: #acaeaf;
 }
 .site_wrapper {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  -o-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   z-index: 99999;
 }
 
@@ -18639,7 +18636,7 @@ Entry Content's Styling
 
 .entry-content p {
   line-height: 1.8;
-  margin: 1.40em 0;
+  margin:  0;
 }
 
 .entry-content p:first-child {
@@ -19712,12 +19709,21 @@ a.custom-logo-link img {
 	width:100%;
   position: relative;
 }
+
+.blocks__block--bottom__overlay--black{
+  height:168px;
+  width:100%;
+  position: relative;
+}
+.blocks__block--bottom__overlay--black:hover{
+  background-color: rgba(0,0,0,0.7);
+}
 .blocks__block__overlay--white:hover{
   background-color: rgba(255,255,255,0.4);
 }
 
 .blocks__block__overlay--black:hover{
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.7);
 }
 
 .blocks__block__overlay a {
@@ -19728,31 +19734,33 @@ a.custom-logo-link img {
   bottom: 0;
 }
 
+
 .blocks__block--right{
-  background: #ffff url("../img/wino.jpg") no-repeat -1000px -1000px;
+  background: #ffff url("../img/wino.jpg") no-repeat -2000px -2000px;
 }
 .blocks__block--right h2, .blocks__block--right p {
   color:#222;
 }
 
 .blocks__block--bottom{
-  background: #222 url("../img/winnica.jpg") no-repeat -1000px -1000px;
+  background: #222 url("../img/winnica.jpg") no-repeat -2000px -2000px;
   height: 170px;
 	width:100%;
+  background-size: cover;
 }
 .blocks__block--bottom h2{
   padding-top:40px;
 }
 
 div.copyright.clearfix{
-  background-color: #222 !important;
+  background-color: #fff !important;
   width:100%;
 }
 .address-content{
   float:left;
   display:inline-block;
   margin-right:25px;
-  color:#fff;
+  color:#000;
 }
 .wine-container{
   float: right;
@@ -19780,7 +19788,9 @@ footer div.copyright{
   height: 70px;
 }
 #colophon{
-  background-color: #222;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding-bottom: 40px;
 }
 .ngg-gallery-thumbnail{
   border:1px solid white !important;
@@ -19788,4 +19798,14 @@ footer div.copyright{
 }
 .entry-title{
   margin-top:30px;
+}
+.block--left, .block--right{
+  border: 1px solid #fff;
+  height:700px;
+}
+.block--left p, .block--right p{
+  padding-left: 0px;
+}
+.active a {
+    font-weight: 700;
 }

@@ -40,7 +40,7 @@ $boxedornot = education_park_boxedornot();
 						</div>	
 						<div class="address-content">	
 						<p><strong>E-mail</strong></p>
-						<p>architektura-wina@gmail.com</p>
+						<p>architekturawina@gmail.com</p>
 						</div>
 				  	</div>
 
