@@ -15872,7 +15872,6 @@ a.readmore,
 a.more-link {
   display: inline-block;
   margin-top: 10px;
-  text-transform: uppercase;
 }
 
 i {
@@ -15903,7 +15902,6 @@ h5,
 h6,
 .widget-title,
 .widgettitle {
-  text-transform: uppercase;
 }
 
 h1 a,
@@ -19745,7 +19743,7 @@ a.custom-logo-link img {
 }
 
 .blocks__block--bottom{
-  background: #222 url("../img/winnica.jpg") no-repeat -2000px -2000px;
+  background: #222 url("../img/winekeg.jpg") no-repeat -2000px -2000px;
   height: 181px;
 	width:100%;
   background-size: cover;
@@ -19815,9 +19813,14 @@ footer div.copyright{
 .menu-item a:hover, .entry-content a:hover{
   color:#bababa  !important;
 }
+.entry-content h2{
+  text-transform: none !important;
+}
 .blocks__block img{
-  padding-top: 20px;
-  border:1px solid #000;
+border:1px solid black;
+}
+#blocks__wine img{
+  margin-top:20px;
 }
 #content-wrap{
   padding: .5em 2em;
@@ -19834,4 +19837,28 @@ footer div.copyright{
 }
 .post-list article img{
   height:350px;
+}
+@media (max-width: 991px) and (min-width:769px){
+  .menu-item{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  .menu-item a{
+    font-size:14px;
+  }
+  a.custom-logo-link img {
+    margin-right: 0px;
+ }
+}
+@media (max-width: 580px) and (min-width:420px){
+article img{
+  width: 420px;
+  height: 250px;
+ }
+}
+@media (max-width: 419px) and (min-width:320px){
+article img{
+  width: 280px;
+  height: 180px;
+ }
 }
