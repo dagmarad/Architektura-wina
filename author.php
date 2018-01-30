@@ -93,9 +93,7 @@ endif;
 					</div>
 				    <!-- End Entry-content -->
 
-				    <footer class="entry-footer clearfix">
-				        <?php education_park_entry_footer(); ?>
-				    </footer>
+				    
 				    <!-- End Entry Footer -->
 
 				</article>

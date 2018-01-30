@@ -25,7 +25,4 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer clearfix">
-		<?php education_park_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

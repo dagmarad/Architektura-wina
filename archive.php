@@ -38,16 +38,9 @@ endif;
 	<div id="primary" class="content-area <?php echo esc_attr($content_class);?>">
 
 		<main id="main" class="site-main" role="main">
-
+			<div class="post-list">
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header>
-			<!-- End the .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -60,46 +53,16 @@ endif;
 						?>
 					</div>
 
-					<footer class="entry-footer clearfix">
-				        <?php education_park_entry_footer(); ?>
-				    </footer>
-				    <!-- End Entry Footer -->
-
 				</article>
 
 			<?php endwhile; ?>
 
-				<!-- Navigation -->
-				<nav class="navigation posts-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Posts navigation','education-park' ); ?></h2>
-			<div class="nav-links clearfix">
-				<?php if ( get_next_posts_link() ) : ?>
-				<div class="nav-previous">
-					<?php next_posts_link( __( 'Older posts <i class="fa fa-long-arrow-left post-arrow"></i>','education-park' ) ); ?>
-				</div>
-				<?php else :  ?>
-					<div class="nav-previous disabled">
-						<a href="#">
-							<i class="fa fa-long-arrow-left post-arrow"></i><?php esc_html_e( 'No Older posts','education-park' ); ?>
-						</a>
-					</div>
-				<?php endif; ?>
-
-				<?php if ( get_previous_posts_link() ) : ?>
-				<div class="nav-next">
-					<?php previous_posts_link( __( 'Newer posts <i class="fa fa-long-arrow-right post-arrow"></i> ','education-park' ) ); ?></div>
-				<?php else :  ?>
-					<div class="nav-next disabled">
-					<a href="#"> <i class="fa fa-long-arrow-right post-arrow"></i><?php esc_html_e( 'No Newer post','education-park' ); ?></a></div>
-				<?php endif; ?>
-			</div><!-- .nav-links -->
-		</nav><!-- .navigation -->
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+			</div>
 		</main>
 		<!-- End the #main -->
 		</div>
