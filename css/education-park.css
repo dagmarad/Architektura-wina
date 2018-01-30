@@ -5488,7 +5488,7 @@ body {
   font-size: 15px;
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: 0 !important;
+  padding: 0 1em 0;
   color: #444;
 }
 
@@ -5551,6 +5551,16 @@ dfn {
 h1 {
   font-size: 2em;
   margin: .67em 0;
+}
+
+h1:after, h2:after, h3:after, h4:after {
+  content: "";
+  height: 1px;
+  width: 160px;
+  border-top: solid 1px #999;
+  display: block;
+  margin-top: 4px;
+  opacity: 0.2;
 }
 
 mark {
@@ -7414,34 +7424,6 @@ pre code {
 .pre-scrollable {
   overflow-y: scroll;
   max-height: 340px;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 750px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 970px;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1170px;
-    width: 100%;
-  }
 }
 
 .container-fluid {
@@ -15840,9 +15822,9 @@ body {
     font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    padding: 3rem 0 0;
     color: #727e85;
     font-weight: 300;
+    margin: 0 auto;
 }
 
 body.boxed-layout {
@@ -19675,22 +19657,24 @@ a.custom-logo-link img {
 }
 
 .blocks__block {
-	/*height: 355px;*/
-	width:49%;
-  margin-bottom: 15px;
-  background-size: cover;
-  max-width: 100%;
-  max-height: 100vw;
-  text-align: left;
-  border:1px solid #222;
+    width: 49%;
+    margin-bottom: 15px;
+    max-width: 100%;
+    max-height: 99%;
+    text-align: left;
+    border: 1px solid #222;
+    transition: 1s;
 }
 .blocks__block:hover{
-  background-position: 0 0;
+  background-position: center center;
 }
 .blocks__block h2{
   padding-top: 120px;
   padding-left: 60px;
   font-size: 48px;
+}
+.blocks__block h2:after {
+  border-top-width: 2px;
 }
 .blocks__block p{
   padding-left: 60px;
@@ -19698,7 +19682,7 @@ a.custom-logo-link img {
 }
 
 .blocks__block--left{
-  background: #222 url("../img/korki.jpg") no-repeat -1000px -1000px;
+  background: #222 url("../img/korki.jpg") no-repeat -50px 0px;
 }
 .blocks__block--left h2, .blocks__block--bottom h2, .blocks__block--bottom p, .blocks__block--left p {
   color:#fff;
@@ -19732,20 +19716,19 @@ a.custom-logo-link img {
   right: 0;
   bottom: 0;
 }
-
-
 .blocks__block--right{
-  background: #ffff url("../img/wino.jpg") no-repeat -2000px -2000px;
+  background: #ffff url("../img/wino.jpg") no-repeat -100px 0px;
 }
 .blocks__block--right h2, .blocks__block--right p {
   color:#222;
 }
 
 .blocks__block--bottom{
-  background: #222 url("../img/winekeg.jpg") no-repeat -2000px -2000px;
+  background: #222 url("../img/winekeg.jpg") no-repeat  -100px 0px;
+  background-color: #fff;
   height: 181px;
 	width:100%;
-  background-size: cover;
+  /*background-size: cover;*/
 }
 .blocks__block--bottom h2{
   padding-top:40px;
@@ -19831,11 +19814,9 @@ border:1px solid black;
 }
 
 .post-list article{
-  height: 450px;
-	width:500px;;
+	width:50%;
 }
 .post-list article img{
-  height:350px;
   width:98%
 }
 @media (max-width: 991px) and (min-width:768px){
@@ -19898,4 +19879,52 @@ border:1px solid black;
   width: 280px;
   height: 186px !important;
  }*/
+}
+/* od tego miejsca zaczyna sie stylowanie galerii foobox*/
+body .foogallery.fg-light.fg-shadow-outline .fg-item-inner {
+  box-shadow: none;
+}
+body .fbx-rounded .fbx-prev.fbx-btn-shadow, body .fbx-rounded .fbx-prev.fbx-btn-shadow:hover {
+  box-shadow: none;
+}
+.fbx-rounded, .fbx-inner{
+  border: 1px solid #000 !important;
+}
+.fg-item-inner{
+  border: 1px solid #000 !important;
+}
+body .fbx-next, body .fbx-prev {
+  border-radius:0 !important;
+  font-size:24px !important;
+  box-shadow: none;
+}
+
+body .fbx-next:before {
+  content: ">";
+font-family: "Open Sans", sans-serif;
+font-weight: bold;
+font-size: 32px;
+}
+
+body .fbx-prev:before {
+  content: "<";
+font-family: "Open Sans", sans-serif;
+font-weight: bold;
+font-size: 32px;
+}
+
+body .fbx-landscape .fbx-prev {
+    background-color: rgba(0,0,0,0.4);
+    left: 0px;
+    color: #fff !important;
+}
+
+body .fbx-landscape .fbx-next {
+    background-color: rgba(0,0,0,0.4);
+    right: 0px;
+    color: #fff !important;
+}
+
+body .fbx-rounded .fbx-inner, body .fbx-rounded .fbx-item-current, body .fbx-rounded .fbx-item-image, body .fbx-rounded .fbx-item-next {
+  border-radius: 0;
 }

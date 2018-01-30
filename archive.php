@@ -45,15 +45,9 @@ endif;
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<div class="entry-content clearfix">
 						<?php
 							get_template_part( 'template-parts/content', get_post_format($post->ID) );
 						?>
-					</div>
-
-				</article>
 
 			<?php endwhile; ?>
 
