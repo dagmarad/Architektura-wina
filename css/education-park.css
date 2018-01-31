@@ -19821,6 +19821,12 @@ border:1px solid black;
 .post-list article img{
   width:98%
 }
+.entry-content .foogallery-container{
+  padding-top:20px;
+}
+.alignnone{
+  border:1px solid black;
+}
 @media (max-width: 991px) and (min-width:768px){
   /*media stworzone z powodu menu*/
   .menu-item{
@@ -19842,6 +19848,12 @@ border:1px solid black;
  .blocks p {
    font-size: 14px;
  }
+ .cpm-mobile .navbar-collapse{
+   float:right;
+   width:auto;
+  padding-top: 20px;
+ }
+
 }
 @media(max-width:767px){
   .blocks h2{
